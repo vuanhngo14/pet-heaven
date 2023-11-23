@@ -19,7 +19,7 @@ const About = () => {
             Pet Heaven is a dedicated organization that rescues and cares for pets in need. We provide a loving and nurturing environment for abandoned, abused, or neglected animals.
           </p>
           <p>
-            Our mission is to find loving homes for these animals, offering a second chance at happiness. We also welcome individuals who, for various reasons, are unable to care for their pets, providing a compassionate solution for rehoming.
+            Our mission is to find loving homes for these animals, offering a second chance at happiness. We also welcome individuals who, for various reasons, are unable to care for their pets.
           </p>
         </div>
       </section>
@@ -52,7 +52,7 @@ const About = () => {
         </div>
         <div className="pet-card">
           <img src="/images/dog3.jpg" alt="Pet 3" />
-          <p> Bella </p>
+          <p> Bizou </p>
         </div>
       </section>
 
