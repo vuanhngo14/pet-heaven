@@ -1,6 +1,6 @@
 // Pet.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import './Pet.css'; // Import the styling
 
 const Pet = () => {
@@ -25,13 +25,44 @@ const Pet = () => {
 
   ];
 
+  const [adoptionForm, setAdoptionForm] = useState({
+    name: '',
+    selectedPet: null,
+  });
+
+  const handleNameChange = (event) => {
+    setAdoptionForm({ ...adoptionForm, name: event.target.value });
+  };
+
+  const handleContactChange = (event) => {
+    setAdoptionForm({ ...adoptionForm, contact: event.target.value });
+  };
+
+  const handlePetSelection = (pet) => {
+    setAdoptionForm({ ...adoptionForm, selectedPet: pet });
+  };
+
+  const handleAdoptionSubmit = () => {
+    // Handle form submission logic here
+    console.log('Adoption form submitted:', adoptionForm);
+  };
+
+  const handlePetPhotoClick = (pet) => {
+    handlePetSelection(pet);
+  };
+
   return (
     <div className="pet-container">
       <h2>Available Pets</h2>
       <ul>
         {petsData.map((pet, index) => (
           <li key={index}>
-            <img src={pet.imageUrl} alt={pet.name} className="pet-image" />
+            <img
+              src={pet.imageUrl}
+              alt={pet.name}
+              className="pet-image"
+              onClick={() => handlePetPhotoClick(pet)}
+            />
             <div>
               <strong>Name:</strong> {pet.name}, <strong>Age:</strong> {pet.age} years
               <br />
@@ -40,6 +71,29 @@ const Pet = () => {
           </li>
         ))}
       </ul>
+
+      {adoptionForm.selectedPet && (
+        <div className="adoption-form">
+          <h2>Adoption Form</h2>
+          <form>
+            <label>
+              Your Name:
+              <input id='name' type="text" value={adoptionForm.name} onChange={handleNameChange} />
+            </label>
+            <label>
+              Contact Number: 
+              <input id='contact' type="text" value={adoptionForm.contact} onChange={handleContactChange} />
+            </label>
+            <label>
+              Pet to Adopt:
+              <input id='petName' type="text" value={adoptionForm.selectedPet.name} disabled />
+            </label>
+            <button type="button" onClick={handleAdoptionSubmit}>
+              Submit Adoption
+            </button>
+          </form>
+        </div>
+      )}
     </div>
   );
 };
