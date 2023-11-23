@@ -11,7 +11,7 @@ const About = () => {
 
       <section className="organization-info">
         <div className="organization-image">
-          <img src="" alt="Pet Heaven Organization" />
+          <img src="/images/mission.jpeg" alt="Pet Heaven Organization" />
         </div>
         <div className="organization-text">
           <h2>Our Mission</h2>
@@ -32,23 +32,27 @@ const About = () => {
           </p>
         </div>
         <div className="vision-image">
-          <img src="path_to_vision_image.jpg" alt="Pet Heaven Vision" />
+          <img src="/images/vision.jpg" alt="Pet Heaven Vision" />
         </div>
       </section>
 
       <section className="pet-images">
         <h2>Meet Our Pets</h2>
         <div className="pet-card">
-          <img src="path_to_image1.jpg" alt="Pet 1" />
-          <p>Pet 1 - Friendly and playful</p>
+          <img src="/images/dog1.jpg" alt="Pet 1" />
+          <p> Luna </p>
         </div>
         <div className="pet-card">
-          <img src="path_to_image2.jpg" alt="Pet 2" />
-          <p>Pet 2 - Sweet and cuddly</p>
+          <img src="/images/dog2.jpg" alt="Pet 2" />
+          <p> Milo </p>
         </div>
         <div className="pet-card">
-          <img src="path_to_image3.jpg" alt="Pet 3" />
-          <p>Pet 3 - Energetic and loving</p>
+          <img src="/images/dog3.jpg" alt="Pet 3" />
+          <p> Bella </p>
+        </div>
+        <div className="pet-card">
+          <img src="/images/dog3.jpg" alt="Pet 3" />
+          <p> Bella </p>
         </div>
       </section>
 
