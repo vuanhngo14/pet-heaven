@@ -39,7 +39,7 @@ const About = () => {
       <section className="pet-images">
         <h2>Meet Our Pets</h2>
         <div className="pet-card">
-          <img src="/images/dog1.jpg" alt="Pet 1" />
+          <img src="/images/cat1.jpg" alt="Pet 1" />
           <p> Luna </p>
         </div>
         <div className="pet-card">
@@ -47,11 +47,11 @@ const About = () => {
           <p> Milo </p>
         </div>
         <div className="pet-card">
-          <img src="/images/dog3.jpg" alt="Pet 3" />
+          <img src="/images/dog1.jpg" alt="Pet 3" />
           <p> Bella </p>
         </div>
         <div className="pet-card">
-          <img src="/images/dog3.jpg" alt="Pet 3" />
+          <img src="/images/rabbit2.jpg" alt="Pet 3" />
           <p> Bizou </p>
         </div>
       </section>

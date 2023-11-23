@@ -1,0 +1,28 @@
+/* Pet.css */
+
+.pet-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .pet-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .pet-container li {
+    margin: 10px;
+    flex: 1; /* Each pet item takes equal width */
+  }
+  
+  .pet-image {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
