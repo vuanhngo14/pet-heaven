@@ -42,6 +42,11 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    text-align: center;
   }
   
   .adoption-form h2 {
@@ -68,6 +73,7 @@
   
   .adoption-form button {
     padding: 10px;
+    margin-top: 2%;
     margin-left: 30%;
     margin-right: 30%;
     background-color: #4caf50;
@@ -90,7 +96,7 @@
 
 
   #contact{
-    margin-left: 10px; 
+    margin-left: 8px; 
   }
 
   #petName{
