@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import './Pet.css'; // Import the styling
+import emailjs from 'emailjs-com';
+
 
 const Pet = () => {
   const petsData = [
@@ -43,9 +45,36 @@ const Pet = () => {
   };
 
   const handleAdoptionSubmit = () => {
-    // Handle form submission logic here
+    
     console.log('Adoption form submitted:', adoptionForm);
+    
+    const templateParams = {
+      from_name: adoptionForm.name,
+      contact_number: adoptionForm.contact,
+      pet_name: adoptionForm.selectedPet.name,
+    }
+
+    emailjs
+    .send(
+      'service_ofv7qnr',
+      'template_cenxrzg', 
+      templateParams,
+      'vuanhngo' // Replace with your Email.js user ID
+    )
+    .then(
+      (response) => {
+        console.log('Email sent successfully:', response);
+      },
+      (error) => {
+        console.error('Error sending email:', error);
+      }
+    );
+
+    alert("Email sent")
+    
   };
+
+  
 
   const handlePetPhotoClick = (pet) => {
     handlePetSelection(pet);
