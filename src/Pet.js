@@ -57,9 +57,9 @@ const Pet = () => {
     emailjs
     .send(
       'service_ofv7qnr',
-      'template_cenxrzg', 
+      'template_ocx47sd', 
       templateParams,
-      'vuanhngo' // Replace with your Email.js user ID
+      'RkFnTscLYBZXMxWw0'
     )
     .then(
       (response) => {

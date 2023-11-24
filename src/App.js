@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import About from './About';
 import Footer from './Footer';
 import Pet from './Pet'; 
+import Release from './Release';
+import Register from './Register';
 import './App.css';
 
 function App() {
@@ -20,6 +22,12 @@ function App() {
         return <About />;
       case 'adopt':
         return <Pet />;
+      case 'release':
+        return <Release />
+      case 'contact':
+        return <About />; 
+      case 'register':
+        return <Register />
       default:
         return null;
     }
@@ -34,7 +42,7 @@ function App() {
         <li onClick={() => handleNavItemClick('about')}>Home</li>
             <li onClick={() => handleNavItemClick('adopt')}>Adopt</li>
             <li onClick={() => handleNavItemClick('release')}>Release</li>
-            <li onClick={() => handleNavItemClick('contact')}>Contact</li>
+            <li onClick={() => handleNavItemClick('register')}>Register</li>
         </ul>
       </nav>
     </header>
