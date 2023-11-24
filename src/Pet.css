@@ -1,0 +1,104 @@
+/* Pet.css */
+
+.pet-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 8px;
+  }
+  
+  .pet-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .pet-container li {
+    margin: 10px;
+    flex: 1; /* Each pet item takes equal width */
+  }
+  
+  .pet-image {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+
+
+  .pet-image:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
+
+  /* Adoption Form */ 
+
+
+
+  .adoption-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    margin-left: 20%;
+    margin-right: 20%;
+
+    text-align: center;
+  }
+  
+  .adoption-form h2 {
+    margin-bottom: 15px;
+  }
+  
+  .adoption-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adoption-form label {
+    margin-bottom: 10px;
+    font-size: large;
+  }
+  
+  .adoption-form input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .adoption-form button {
+    padding: 10px;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .adoption-form button:hover {
+    background-color: #45a049;
+  }
+
+  #name{
+    margin-left: 48px; 
+  }
+
+
+  #contact{
+    margin-left: 8px; 
+  }
+
+  #petName{
+    margin-left: 40px;
+  }
