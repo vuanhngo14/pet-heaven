@@ -22,6 +22,12 @@
     font-size: 16px;
     line-height: 1.5;
   }
+
+  .release-form{
+    align-items: center;
+    padding-right: 2%;
+
+  }
   
   .release-form h2 {
     font-size: 24px;
@@ -31,6 +37,7 @@
   .release-form form {
     display: grid;
     gap: 10px;
+  
   }
   
   .release-form label {
@@ -55,6 +62,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 2%;
   }
   
   .release-form button:hover {
