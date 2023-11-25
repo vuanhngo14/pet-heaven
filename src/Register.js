@@ -1,5 +1,3 @@
-// Register.js
-
 import React, { useState } from 'react';
 import './Register.css'; 
 import emailjs from 'emailjs-com'; 

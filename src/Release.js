@@ -1,5 +1,3 @@
-// Release.js
-
 import React, { useState } from 'react';
 import './Release.css'; 
 import emailjs from 'emailjs-com'; 

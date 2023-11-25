@@ -1,7 +1,5 @@
-// Pet.js
-
 import React, { useState } from 'react';
-import './Pet.css'; // Import the styling
+import './Pet.css'; 
 import emailjs from 'emailjs-com';
 
 

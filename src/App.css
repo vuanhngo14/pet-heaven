@@ -25,7 +25,7 @@ nav ul li {
 
 nav li:hover {
   text-decoration: underline;
-  color: #ffcc00; /* Change the text color on hover */
+  color: #ffcc00; 
 }
 
 main {
